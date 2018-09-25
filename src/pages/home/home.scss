@@ -1,0 +1,31 @@
+page-home {
+    ion-icon:before {
+        font-size: 2rem !important;
+    }
+}
+
+.botton {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
+    line-height: normal;
+    //margin: 4px 2px;
+    width: 85px;
+}
+
+.contenido {
+    height: 50px;
+    width: 15%;
+    float: left;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bordes {
+    border: 1px;
+    border-style: solid;
+    color: red;
+}

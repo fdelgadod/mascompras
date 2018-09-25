@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <div class="contenido">
+            <!-- promocion -->
+            <div class=" ">
+                <a href="" class="botton ">
+                    <ion-icon name="ai-location"></ion-icon>
+                    Promoción Cerca
+                </a>
+            </div>
+        </div>
+        <div class="contenido">
+            <!-- Shopping -->
+            <div class="">
+                <a href="" class="botton">
+                    <ion-icon name="ai-price-tags"></ion-icon>
+                    Shopping
+                </a>
+            </div>
+        </div>
+        <div class="contenido">
+            <!-- Destacados -->
+            <div class="">
+                <a href="" class="botton ">
+                    <ion-icon name="star"></ion-icon>
+                    Destacados
+                </a>
+            </div>
+        </div>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let categoria of categoriaList">
+            <ion-avatar item-left>
+                <img src="{{categoria.pic}}">
+            </ion-avatar>
+            <h2>{{categoria.title}}</h2>
+            <p item-right>{{categoria.precio | currency }}</p>
+            <p>{{categoria.descripcion}}</p>
+        </ion-item>
+
+    </ion-list>
+</ion-content>
+<ion-footer>
+    <ion-searchbar autocomplete>
+    </ion-searchbar>
+</ion-footer>
